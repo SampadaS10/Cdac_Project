@@ -1,4 +1,4 @@
-package com.jewellery.com.jewellery;
+package com.jewellery;
 
 import java.util.Iterator;
 import java.util.List;
@@ -11,8 +11,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-import com.jewellery.com.jewellery.entity.TestEntity;
-import com.jewellery.com.jewellery.repo.TestRepo;
+
+import com.jewellery.controller.ProductController;
+import com.jewellery.entity.Product;
+import com.jewellery.entity.TestEntity;
+import com.jewellery.repo.ProductRepo;
+import com.jewellery.repo.TestRepo;
 
 
 @SpringBootApplication
@@ -20,7 +24,18 @@ public class JewelleryApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(JewelleryApplication.class, args);
-		TestRepo repo=context.getBean(TestRepo.class);
+		ProductRepo repo=context.getBean(ProductRepo.class);
+		Product p1=new Product();
+		p1.setCategory_id(10);
+		p1.setProduct_name("firstproduct");
+		p1.setProduct_quantity(3);
+		p1.setPrice(200);
+		repo.save(p1);
+//		ProductController pc=new ProductController();
+//		pc.insert(p1);
+		System.out.println("Done Bhaii Donee");
+		
+		//TestRepo repo=context.getBean(TestRepo.class);
 		
 //		TestEntity t1=new TestEntity();
 //		t1.setName("Sampada");

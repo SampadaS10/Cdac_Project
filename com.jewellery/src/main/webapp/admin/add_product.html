@@ -1208,84 +1208,80 @@ Settings</a>
         </div>
         <div class="card-body py-md-30">
         <div class="horizontal-form">
-        <form action="#">
-        <div class="form-group row">
-        <div class="col-sm-3 d-flex aling-items-center">
-        <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Category Name</label>
-        </div>
-        <div class="col-sm-3">
-         
-                <div>
-                <select  class="form-control ">
-                <option value="01">Gold</option>
-                <option value="02">Silver</option>
-                <option value="03">Platinum</option>
-                
-                </select>
-                </div>
-                
-        </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-sm-3 d-flex aling-items-center">
-          <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Product Name</label>
-          </div>
-          <div class="col-sm-9">
-          <input type="text" class="form-control ih-medium ip-light radius-xs b-light px-15" id="inputName" placeholder="Enter Product Name" name="category_name">
-          </div>
-          </div>
-          <div class="form-group row">
-            <div class="col-sm-3 d-flex aling-items-center">
-            <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Product Price</label>
-            </div>
-            <div class="col-sm-3">
-              <input type="text" class="form-control ih-medium ip-light radius-xs b-light px-15" id="inputName" placeholder="Enter Product Price" name="product_price">
-              </div>
-              <div class="col-sm-3 d-flex aling-items-center">
-                <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Product Quantity</label>
-                </div>
-                <div class="col-sm-3">
-                  <input type="text" class="form-control ih-medium ip-light radius-xs b-light px-15" id="inputName" placeholder="Enter Product Quantity" name="product_quantity">
-                  </div>
-                    
-                    </div>
-                    <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
-                      <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Product Description</label>
-                      </div>
-                      <div class="col-sm-3">
-                        <textarea type="text" class="form-control ih-medium ip-light radius-xs b-light px-15" id="inputName" placeholder="Enter Product Description" name="product_description"></textarea>
-                        </div>
-                        <div class="col-sm-3 d-flex aling-items-center">
-                          <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Product Status</label>
-                          </div>
-                          <div class="col-sm-3">
-                            <textarea type="text" class="form-control ih-medium ip-light radius-xs b-light px-15" id="inputName" placeholder="Enter Product Status" name="product_status"></textarea>
-                            </div>
-                              
-                              </div>
-                              <div class="form-group row">
-                                <div class="col-sm-3 d-flex aling-items-center">
-                                <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Product Image</label>
-                                </div>
-                                <div class="col-sm-3">
-                                  <input type="file" class="form-control ih-medium ip-light radius-xs b-light px-15" id="inputName" placeholder="Enter Product Description" name="product_description">
-                                  </div>
-                                  
-                                        </div>
-                    
-            </div>
-            </div>
-        <center><button class="btn btn-primary btn-default btn-squared ">Add Product
-        </button></center>
-
-        </form>
+        <form action="addproduct" method="post">
+	        <!-- <div class="form-group row">
+	        <div class="col-sm-3 d-flex aling-items-center">
+	        <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Category Name</label>
+	        </div>
+	        <div class="col-sm-3">
+	         
+	                <div>
+	                <select  class="form-control ">
+	                <option value="01">Gold</option>
+	                <option value="02">Silver</option>
+	                <option value="03">Platinum</option>
+	                
+	                </select>
+	                </div>
+	                
+	        </div>
+	        </div> -->
+	        <div class="form-group row">
+	          <div class="col-sm-3 d-flex aling-items-center">
+	          <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Product Name</label>
+	          </div>
+	          <div class="col-sm-9">
+	          <input type="text" class="form-control ih-medium ip-light radius-xs b-light px-15" id="inputName" placeholder="Enter Product Name" name="product_name">
+	          </div>
+	          </div>
+	          <div class="form-group row">
+	            <div class="col-sm-3 d-flex aling-items-center">
+	            <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Product Price</label>
+	            </div>
+	            <div class="col-sm-3">
+	              <input type="text" class="form-control ih-medium ip-light radius-xs b-light px-15" id="inputName" placeholder="Enter Product Price" name="price">
+	              </div>
+	              <div class="col-sm-3 d-flex aling-items-center">
+	                <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Product Quantity</label>
+	                </div>
+	                <div class="col-sm-3">
+	                  <input type="text" class="form-control ih-medium ip-light radius-xs b-light px-15" id="inputName" placeholder="Enter Product Quantity" name="product_quantity">
+	                  </div>
+	                    
+	                    </div>
+	                    <div class="form-group row">
+	                      <div class="col-sm-3 d-flex aling-items-center">
+	                      <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Product Description</label>
+	                      </div>
+	                      <div class="col-sm-3">
+	                        <textarea type="text" class="form-control ih-medium ip-light radius-xs b-light px-15" id="inputName" placeholder="Enter Product Description" name="product_description"></textarea>
+	                        </div>
+	                        <div class="col-sm-3 d-flex aling-items-center">
+	                          <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Product Status</label>
+	                          </div>
+	                          <div class="col-sm-3">
+	                            <textarea type="text" class="form-control ih-medium ip-light radius-xs b-light px-15" id="inputName" placeholder="Enter Product Status" name="status"></textarea>
+	                            </div>
+	                              
+	                              </div>
+	                              <div class="form-group row">
+	                                <div class="col-sm-3 d-flex aling-items-center">
+	                                <label for="inputName" class=" col-form-label color-dark fs-14 fw-500 align-center">Product Image</label>
+	                                </div>
+	                                <div class="col-sm-3">
+	                                  <input type="file" class="form-control ih-medium ip-light radius-xs b-light px-15" id="inputName" placeholder="Enter Product Description" name="product_image">
+	                                  </div>
+	                                  
+	                                        </div>
+	                    
+	            </div>
+	            </div>
+	        <center><input type="submit" value="Add Product" class="btn btn-primary btn-default btn-squared "></center>
+	     </form>
         </div>
         </div>
+        </div>        
         </div>
-        
-        </div>
-
 </div>
 </div>
 

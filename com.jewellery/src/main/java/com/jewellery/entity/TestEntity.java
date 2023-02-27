@@ -1,4 +1,4 @@
-package com.jewellery.com.jewellery.entity;
+package com.jewellery.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,16 +1,17 @@
-package com.jewellery.com.jewellery.entity;
+package com.jewellery.entity;
 
 import java.util.Date;
+
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-@Entity
+//@Entity
 public class Product 
 {
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	//@Id
+	//@GeneratedValue(strategy=GenerationType.AUTO)
 	private int product_id;
 	private int category_id;
 	private String product_name;
